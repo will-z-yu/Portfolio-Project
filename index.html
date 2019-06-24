@@ -9,6 +9,13 @@
         <!-- Bootstrap core CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<<<<<<< Updated upstream
+=======
+        <!-- slick for slideshows -->
+        <link rel="stylesheet" type="text/css" href="./src/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
+
+>>>>>>> Stashed changes
         <title>Home | Portfolio</title>
     </head>
     <!-- body-start -->
@@ -24,14 +31,45 @@
             </nav>
         </header>
         <hr>
+<<<<<<< Updated upstream
         <section>
             <p>Slide Show</p>
             <p>Supports automatic display and manual view</p>
+=======
+        <!-- Slideshow -->
+        <section class="jumbotron text-center">
+            <h1>Slide Show</h1>
+            <p class="text-muted">Supports automatic display and manual view</p>
+            <div class="container slick-slideshow">
+                <div>content</div>
+                <div>content</div>
+                <div>content</div>
+                <div>content</div>
+            </div>
+>>>>>>> Stashed changes
         </section>
         <hr>
+        <!-- Picture Collections -->
         <section>
             <p>Pictures</p>
             <p>Fades up when scroll down</p>
         </section>
+<<<<<<< Updated upstream
+=======
+
+        <!-- slick.js -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="./src/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slick-slideshow').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            });
+        </script>
+>>>>>>> Stashed changes
     </body>
 </html>
