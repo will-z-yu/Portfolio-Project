@@ -1,13 +1,16 @@
 <html>
     <!-- head-start -->
     <head>
-        <!-- Meta tags-->
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Photo collection from me, an art student who loves photography! Scroll down to see more!">
         
-        <!-- Bootstrap core CSS-->
+        <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- slick for slideshows -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         <title>Home | Portfolio</title>
     </head>
@@ -27,11 +30,33 @@
         <section>
             <p>Slide Show</p>
             <p>Supports automatic display and manual view</p>
+            <div class="slideshow">
+                <img src="res/img/photos/cityscapes/city-1">
+                <img src="res/img/photos/landscapes/land-1">
+                <img src="res/img/photos/portraits/portrait-1">
+                <img src="res/img/photos/star/star-1">
+            </div>
         </section>
         <hr>
         <section>
             <p>Pictures</p>
             <p>Fades up when scroll down</p>
         </section>
+
+        <!-- slick.js -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slideshow').slick({
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
+                });
+            });
+        </script>
     </body>
 </html>
